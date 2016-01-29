@@ -1,3 +1,6 @@
+require 'active_record'
+include ActiveRecord::Tasks
+
 task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
   require_relative './config/environment'
@@ -20,6 +23,8 @@ namespace :db do
   end
 end
 
+
 task :console => :environment do
+  require 'pry'
   Pry.start
 end
