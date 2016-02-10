@@ -1,3 +1,4 @@
+
 task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
   require_relative './config/environment'
