@@ -9,7 +9,7 @@
 # In this change method, create columns with the correct names and 
 # value types according to the spec
 
-create Costume < ActiveRecord::Migration
+class Costume < ActiveRecord::Migration
   def change
        create_table :costumes do |t|
         t.string :name
