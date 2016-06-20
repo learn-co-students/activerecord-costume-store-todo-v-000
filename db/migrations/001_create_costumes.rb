@@ -1,4 +1,4 @@
-class CreateCostume < ActiveRecord::Migration
+class CreateCostumes < ActiveRecord::Migration
 # Create a class and inherit from ActiveRecord::Migration
 
 # By convention, the class name should match the part of the
@@ -18,6 +18,7 @@ class CreateCostume < ActiveRecord::Migration
         t.float :price
         t.string :size
         t.string :image_url
+        t.timestamps
       end
   end
 
