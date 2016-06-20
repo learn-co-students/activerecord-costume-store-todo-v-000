@@ -1,5 +1,8 @@
+class CreateHauntedHouse < ActiveRecord::Migration
 # Create your haunted_houses migration here
-class HauntedHouse < ActiveRecord::Migration
+
+
+
   def change
        create_table :hauntedhouses do |t|
         t.string :name
