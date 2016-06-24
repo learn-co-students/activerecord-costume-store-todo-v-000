@@ -9,7 +9,7 @@
 # value types according to the spec
 
 class CreateCostumes < ActiveRecord::Migration
-  def update
+  def change
     create_table :costumes do |t|
       t.string :name
       t.float :price
