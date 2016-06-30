@@ -1,6 +1,6 @@
 # Create your costume_stores migration here
 
-class CreateCostumeStores
+class CreateCostumeStores < ActiveRecord::Migration
   def change
     create_table :costume_stores do |t|
       t.string   :name
@@ -8,8 +8,8 @@ class CreateCostumeStores
       t.integer  :costume_inventory
       t.integer  :num_of_employees
       t.boolean  :still_in_business
-      t.string :opening_time
-      t.string :closing_time
+      t.datetime :opening_time
+      t.datetime :closing_time
     end
   end
 end
