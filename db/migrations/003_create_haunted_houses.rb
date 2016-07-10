@@ -1,4 +1,4 @@
-class CreateHauntedHouse < ActiveRecord::Migration
+class CreateHauntedHouses < ActiveRecord::Migration
   def change
     create_table :haunted_houses do |t|
       t.string :name
@@ -6,8 +6,11 @@ class CreateHauntedHouse < ActiveRecord::Migration
       t.string :theme
       t.float :price
       t.boolean :family_friendly
-      t.datetime :opening_date
+      t.date :opening_date
       t.date :closing_date
+      t.text :description
+
+      t.timestamps null: false
     end
   end
 end
