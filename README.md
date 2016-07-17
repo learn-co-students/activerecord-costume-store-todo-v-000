@@ -94,7 +94,7 @@ class Dog < ActiveRecord::Base
 end
 ```
 
-Even though there are no explicit methods to call on name and breed, because this Dog model would work with the created `dogs` table above and you would be able to call `name`, `breed`, and `id` on any new instance of the Dog class. For instance (get it?!?!):
+Even though there are no explicit methods to call on name and breed, because this Dog model would work with the created `dogs` table above, you would be able to call `name`, `breed`, and `id` on any new instance of the Dog class. For instance (get it?!?!):
 
 ```ruby
 shiloh = Dog.new
@@ -192,7 +192,7 @@ Candy.last
 # => #<Candy id: 3, name: "Reese's Peanut Butter Cups", calories: 210>
 ```
 
-Isn't that amazing? Twelve lines of code allows you to create a table and a class that interact with each other elegantly and efficiently. It builds out methods like, `create`, `update`, `count`, `name`, `calories`, along with others such as `build` and `save`.
+Isn't that amazing? Twelve lines of code allow you to create a table and a class that interact with each other elegantly and efficiently. It builds out methods like, `create`, `update`, `count`, `name`, `calories`, along with others such as `build` and `save`.
 
 ## Instructions
 
