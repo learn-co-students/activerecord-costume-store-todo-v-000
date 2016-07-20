@@ -13,38 +13,38 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
-  create_table "ar_internal_metadata", primary_key: "key", force: :cascade do |t|
-    t.string   "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "ar_internal_metadata", ["key"], name: "sqlite_autoindex_ar_internal_metadata_1", unique: true
-
   create_table "costume_stores", force: :cascade do |t|
-    t.string  "name"
-    t.string  "location"
-    t.integer "costume_inventory"
-    t.integer "number_of_employees"
-    t.boolean "in_business"
+    t.string   "name"
+    t.string   "location"
+    t.integer  "costume_inventory"
+    t.integer  "num_of_employees"
+    t.boolean  "still_in_business"
+    t.datetime "opening_time"
+    t.datetime "closing_time"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "costumes", force: :cascade do |t|
     t.string   "name"
-    t.string   "location"
-    t.string   "theme"
-    t.integer  "price"
-    t.string   "family_friendly"
-    t.datetime "open_date"
-    t.datetime "close_date"
-    t.text     "long_description"
+    t.string   "size"
+    t.string   "image_url"
+    t.float    "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "haunted_house", force: :cascade do |t|
-    t.string  "name"
-    t.integer "price"
-    t.integer "size"
-    t.string  "image_url"
+  create_table "haunted_houses", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.float    "price"
+    t.string   "theme"
+    t.boolean  "family_friendly"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.text     "description"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
