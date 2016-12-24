@@ -1,1 +1,1 @@
-
+class CostumeStore < ActiveRecord::Base
