@@ -23,18 +23,23 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "costumes", force: :cascade do |t|
-    t.string "name"
-    t.string "price"
-    t.string "size"
-    t.string "image_url"
+    t.string   "name"
+    t.string   "price"
+    t.string   "size"
+    t.string   "image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "stores", force: :cascade do |t|
-    t.string  "name"
-    t.string  "location"
-    t.integer "inventory"
-    t.integer "employee_count"
-    t.boolean "open"
+  create_table "haunted_houses", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "theme"
+    t.boolean  "family_friendly"
+    t.integer  "price"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.text     "description"
   end
 
 end
