@@ -1,5 +1,5 @@
 # Create your costume_stores migration here
-<<<<<<< HEAD
+
 class CreateCostumeStores < ActiveRecord::Migration[5.0]
   # Test change
   #avidor@flatironschool.com
@@ -14,10 +14,5 @@ class CreateCostumeStores < ActiveRecord::Migration[5.0]
        t.datetime :closing_time
     end
   end
-=======
-class CreateCostumeStores < ActiveRecord::Migration
-  # def change
-  #
-  # end
->>>>>>> 5e15c9b8786a2f30248f0d71f9b4891e6a653822
+
 end
