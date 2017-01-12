@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
+<<<<<<< HEAD
   create_table "costume_stores", force: :cascade do |t|
     t.string   "name"
     t.string   "location"
@@ -42,4 +43,6 @@ ActiveRecord::Schema.define(version: 3) do
     t.string  "description"
   end
 
+=======
+>>>>>>> 5e15c9b8786a2f30248f0d71f9b4891e6a653822
 end
