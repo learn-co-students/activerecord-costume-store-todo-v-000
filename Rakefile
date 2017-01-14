@@ -19,3 +19,9 @@ load 'active_record/railties/databases.rake'
 task :console => :environment do
   Pry.start
 end
+
+task :remove_databases do
+  system('rm db/halloween-development.db')
+  system('rm db/halloween-test.db')
+  system('rm db/schema.rb')
+end
