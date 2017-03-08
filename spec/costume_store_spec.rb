@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-
+require 'pry'
 describe "CostumeStore" do
 
   it "has a name" do
@@ -50,6 +50,7 @@ describe "CostumeStore" do
 
   it "has an opening time" do
     start_time = get_opening_time
+      binding.pry
     creative = CostumeStore.create(
       name: "Creative Costume Co", 
       opening_time: start_time 
