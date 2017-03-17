@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-
+require 'pry'
 describe "CostumeStore" do
 
   it "has a name" do
