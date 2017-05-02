@@ -48,11 +48,11 @@ ActiveRecord is magic. Well, not really. But it does build out a bunch of method
 
 ActiveRecord allows you to create a database that interacts with your class with only a few lines of code. These lines of code go to creating a model, which resides in the `app/models` folder, and a migration, which resides in the `db/migrate` folder.
 
-The model inherits from `ActiveRecord::Base` while the migration inherits from `ActiveRecord::Migration`. Many migrations these days have a `change` method, but you might also see migrations with an `up` and a `down` method instead. To use ActiveRecord, you have to stick to some specific naming conventions: while the migrations are plural, the models are singular. 
+The model inherits from `ActiveRecord::Base` while the migration inherits from `ActiveRecord::Migration`. Many migrations these days have a `change` method, but you might also see migrations with an `up` and a `down` method instead. To use ActiveRecord, you have to stick to some specific naming conventions: while the migrations are plural, the models are singular.
 
 #### Migrations
 
-To start, the class names in the migration files must match their file names. For instance, a class in the migration file called `20141013204115_create_candies.rb` must be named `CreateCandies` while a class in a migration file called `20130915204319_add_addresses_to_houses.rb` must be called AddAddressesToHouses. 
+To start, the class names in the migration files must match their file names. For instance, a class in the migration file called `20141013204115_create_candies.rb` must be named `CreateCandies` while a class in a migration file called `20130915204319_add_addresses_to_houses.rb` must be called AddAddressesToHouses.
 
 You might notice that in both the examples above, the numbers at the front of the file name were ignored. These numbers are in the form `YYYYMMDDHHMMSS`. Later on, these timestamps will become important as Rails uses them to determine which migration should be run and in what order. For instance, if you made a table called `dog_walkers` and then added a column to it called `rating`, that would be fine as the timestamp on the table creation would be before adding a column to it. However, if you did this in reverse order, that is adding a column to a table that doesn't exist then creating the table, you would get an error.
 
@@ -111,7 +111,7 @@ Dog.find_by(:name => "Shiloh") == shiloh
 
 Notice that you had access to reader and writer methods that cooperated with the database that you never had to actually code. You could set the name without ever writing `def name=()` and call the `self.find_by(attribute)` method without ever teaching your Dog class how to look up data in the database. It's pretty awesome. Take a look at an example below.
 
-#### Example 
+#### Example
 
 For instance, let's say you wanted to make a class called `Candy`. Candies should have two attributes, a name (string) and the number of calories (integer), you would write the migration as seen below:
 
@@ -225,13 +225,13 @@ You will only be altering code in six files, the three files in the `models` fol
 * Fill out the ActiveRecord migration for `costume_stores` such that it passes the specs.
 * Create the HauntedHouse class in `app/models/`.
 * Fill out the ActiveRecord migration for haunted_houses such that it passes the specs.
-* Remember to run `rake db:migrate` every time you create a migration. 
+* Remember to run `rake db:migrate` every time you create a migration.
 * Just like for any other lab, run `rspec` to view your progress.
 
 ## Resources
 * [ActiveRecord Migrations](http://guides.rubyonrails.org/migrations.html)
   * Just look at the code for the example migrations
-* [Creating Active Record Models](http://guides.rubyonrails.org/active_record_basics.html#creating-active-record-models) 
+* [Creating Active Record Models](http://guides.rubyonrails.org/active_record_basics.html#creating-active-record-models)
 * [Timestamps](http://api.rubyonrails.org/classes/ActiveRecord/Timestamp.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-costume-store-todo' title='ActiveRecord Costume Store'>ActiveRecord Costume Store</a> on Learn.co and start learning to code for free.</p>
