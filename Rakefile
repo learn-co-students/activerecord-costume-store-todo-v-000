@@ -5,7 +5,7 @@ task :environment do
   require_relative './config/environment'
 end
 
-include ActiveRecord::Tasks
+include ActiveRecord::Tasks#db:migrate is 1 of rake task
 DatabaseTasks.db_dir = 'db'
 DatabaseTasks.migrations_paths = 'db/migrate'
 seed_loader = Class.new do
