@@ -19,3 +19,7 @@ load 'active_record/railties/databases.rake'
 task :console => :environment do
   Pry.start
 end
+
+def reload!
+  load_all './lib'
+end
