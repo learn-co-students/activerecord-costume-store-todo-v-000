@@ -244,3 +244,5 @@ You will only be altering code in six files, the three files in the `models` fol
 * [Timestamps](http://api.rubyonrails.org/classes/ActiveRecord/Timestamp.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-costume-store-todo' title='Active Record Costume Store'>Active Record Costume Store</a> on Learn.co and start learning to code for free.</p>
+
+Test change
