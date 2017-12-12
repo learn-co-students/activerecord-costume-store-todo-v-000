@@ -9,7 +9,7 @@ class CreateHauntedHouses < ActiveRecord::Migration[4.2]
       haunted_house.boolean :family_friendly
       haunted_house.datetime :opening_date
       haunted_house.datetime :closing_date
-      haunted_house.text :long_description
+      haunted_house.string :description
     end
   end
 end
