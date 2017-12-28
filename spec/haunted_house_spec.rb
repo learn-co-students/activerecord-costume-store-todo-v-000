@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require_relative '../app/models/haunted_house'
 
 describe "HauntedHouse" do
 

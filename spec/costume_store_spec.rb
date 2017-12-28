@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-require_relative '../app/models/costume_store'
+# require_relative '../app/models/costume_store'
 
 #require_relative '../db/migrate/002_create_costume_stores'
 
