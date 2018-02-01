@@ -10,7 +10,7 @@ class CreateHauntedHouses < ActiveRecord::Migration[4.2]
         t.datetime :opening_date
         t.datetime :closing_date
         t.text :description
-
+        #this carriage return was important for some reason
         t.timestamps null: false #knows when it was created / updated
       end
     end
