@@ -1,5 +1,5 @@
-class Costume < ActiveRecord::Migration
-  def self.create
+class CreateCostumes < ActiveRecord::Migration[4.2]
+  def self.change
     create_table :costumes do |t|
         t.string :name
         t.integer :price
@@ -7,6 +7,7 @@ class Costume < ActiveRecord::Migration
         t.string :image
       end
   end
+  
 end
 
 # Create a class and inherit from ActiveRecord::Migration
