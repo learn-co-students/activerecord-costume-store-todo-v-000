@@ -9,6 +9,9 @@ class CreateCostumeStores < ActiveRecord::Migration[4.2]
         t.boolean :operating
         t.datetime :open_time
         t.datetime :closing_time
+        t.timestamps :created_at
       end
   end
+
+  self.change
 end
