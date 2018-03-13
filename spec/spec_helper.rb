@@ -1,23 +1,21 @@
-ENV["ACTIVE_RECORD_ENV"] = "test"
-
 require_relative '../config/environment'
+ENV["ACTIVE_RECORD_ENV"] = "test"
 
 RSpec.configure do |config|
 
   config.before(:suite) do
-    clear_db
-    system("rake db:migrate")
-    DB.tables
+    DatabaseCleaner.clean_with(:truncation)
+    DatabaseCleaner.start
+    DatabaseCleaner.clean
+  end
+
+  config.after(:suite) do
   end
 
 end
 
 def __
   raise "Replace __ with test code."
-end
-
-def clear_db
-  File.open("db/halloween-test.db", "w+") {|f| f.puts ""}
 end
 
 def get_opening_time
