@@ -1,3 +1,2 @@
 Gemfile.lock
-db/halloween-development.db
-db/halloween-test.db
+.DS_Store
