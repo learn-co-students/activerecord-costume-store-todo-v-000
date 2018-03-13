@@ -1,4 +1,5 @@
 require 'active_record'
+require 'pry'
 
 task :environment do
   ENV["ACTIVE_RECORD_ENV"] ||= "development"
