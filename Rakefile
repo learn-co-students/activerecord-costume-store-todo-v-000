@@ -19,3 +19,7 @@ load 'active_record/railties/databases.rake'
 task :console => :environment do
   Pry.start
 end
+
+task :fix_column_name do 
+	require_relative './db/migrate/05_fix_column_name.rb'
+end
