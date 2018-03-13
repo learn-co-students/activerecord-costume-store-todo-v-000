@@ -7,7 +7,7 @@ RSpec.configure do |config|
   config.before(:suite) do
     clear_db
     system("rake db:migrate")
-    DB.tables
+    DB.data_sources
   end
 
 end
