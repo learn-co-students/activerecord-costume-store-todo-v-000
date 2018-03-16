@@ -1,11 +1,12 @@
-class CreateCostumes < ActiveRecord::Migration[4.2]
+class CreateCostumes < ActiveRecord::Migration[5.1]
 
   def change
     create_table :costumes do |type|
     type.string :name
     type.float :price
     type.string :size
-    type.string :url
+    type.string :image_url
+    type.timestamps null: false
     end #do iteration
   end
 
