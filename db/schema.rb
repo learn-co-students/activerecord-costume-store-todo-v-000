@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "location"
     t.string "costume_inventory"
     t.integer "num_of_employees"
-    t.string "still_in_business"
-    t.string "closing_time"
-    t.string "opening_time"
+    t.boolean "still_in_business"
+    t.datetime "closing_time"
+    t.datetime "opening_time"
   end
 
   create_table "costumes", force: :cascade do |t|
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "location"
     t.string "theme"
     t.integer "price"
-    t.string "family_friendly"
+    t.boolean "family_friendly"
     t.string "opening_date"
     t.string "closing_date"
     t.string "description"
