@@ -1,1 +1,15 @@
 # Create your costume_stores migration here
+
+class CreateCostumeStores < ActiveRecord::Migration[5.1]
+  def change
+    create_table :costumestores do |t|
+      t.string :name
+      t.string :location
+      t.string :costume_inventory
+      t.integer :num_of_employees
+      t.boolean :still_in_business
+      t.string :get_opening_time
+      t.string :get_closing_time
+    end #ends iteration
+  end #ends method
+end #ends class
