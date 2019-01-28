@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.text "theme"
     t.float "price"
     t.boolean "family_friendly"
-    t.text "open_date"
+    t.text "opening_date"
     t.text "closing_date"
     t.text "description"
   end
