@@ -10,6 +10,7 @@ def change
     custome.float  :price
 
      custome.timestamps null: false
+   end
  end
 end
 
