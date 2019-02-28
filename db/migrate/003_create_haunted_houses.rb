@@ -10,6 +10,7 @@ def change
   hauntedhouse.boolean :family_friendly
   hauntedhouse.datetime :opening_date
   hauntedhouse.datetime :closing_date
+
   hauntedhouse.text :description
 
   hauntedhouse.timestamps null: false
