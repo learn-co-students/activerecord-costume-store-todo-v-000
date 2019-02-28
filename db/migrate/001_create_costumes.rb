@@ -9,7 +9,7 @@ def change
     custome.string  :image_url
     custome.float  :price
 
-     t.timestamps null: false
+     custome.timestamps null: false
  end
 end
 
