@@ -1,5 +1,7 @@
 require_relative 'spec_helper'
 
+require 'pry'
+
 describe "HauntedHouse" do
 
   it "has a name" do
@@ -56,6 +58,7 @@ describe "HauntedHouse" do
 
   it "has a long, long description" do
     description = get_description
+    # binding.pry
     HauntedHouse.create(name: "13th Floor", description: description)
     expect(HauntedHouse.find_by(name: "13th Floor").description).to eq(description)
   end
