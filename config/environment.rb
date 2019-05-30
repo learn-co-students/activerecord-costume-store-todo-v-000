@@ -18,3 +18,7 @@ DB = ActiveRecord::Base.connection
 if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
+
+require_relative '../lib/costume'
+require_relative '../lib/costume_store'
+require_relative '../lib/haunted_house'
