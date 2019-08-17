@@ -1,4 +1,6 @@
 require_relative 'spec_helper'
+require_relative '../app/models/costume'
+# require_relative '../db/migrate/001_create_costumes'
 
 describe "Costume" do
 
