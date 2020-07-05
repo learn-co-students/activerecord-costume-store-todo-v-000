@@ -1,5 +1,5 @@
 # Create your HauntedHouse class here
 
-class HauntedHouse < ActiveRecord::Base
+class Costume < ActiveRecord::Base
 
 end
